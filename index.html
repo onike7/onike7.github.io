@@ -2,80 +2,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONIKE7 | Links Oficiais</title>
-<style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #080808;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 15px;
-}
-.container {
-  width: 100%;
-  max-width: 430px;
-  text-align: center;
-}
-.logo {
-  font-size: 45px;
-  font-weight: 900;
-  letter-spacing: 4px;
-  margin-bottom: 8px;
-}
-.logo span { color: #aaa; }
-.subtitle {
-  color: #aaa;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-}
-.link {
-  display: block;
-  text-decoration: none;
-  color: white;
-  background: #171717;
-  border: 1px solid #444;
-  padding: 17px;
-  border-radius: 12px;
-  margin: 14px 0;
-  font-weight: bold;
-  transition: .2s;
-}
-.link:hover {
-  background: #303030;
-  border-color: white;
-  transform: scale(1.02);
-}
-.live {
-  background: white;
-  color: black;
-  border-color: white;
-}
-.footer {
-  color: #666;
-  font-size: 12px;
-  margin-top: 35px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+
+  <title>ONIKE7 | Links Oficiais</title>
+
+  <meta name="description" content="Acesse os links oficiais do ONIKE7: LivePix, Instagram e Discord.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(ellipse at top, #252525 0%, #101010 40%, #050505 100%);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 18px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: clamp(48px, 12vw, 76px);
+      font-weight: 900;
+      letter-spacing: 5px;
+      font-style: italic;
+      text-shadow: 0 0 22px rgba(255,255,255,0.2);
+    }
+
+    .subtitle {
+      color: #aaa;
+      font-size: 12px;
+      letter-spacing: 5px;
+      margin-top: 8px;
+      margin-bottom: 35px;
+    }
+
+    .line {
+      width: 65px;
+      height: 3px;
+      background: #fff;
+      margin: 0 auto 30px;
+      border-radius: 5px;
+    }
+
+    .description {
+      color: #ccc;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 62px;
+      padding: 16px 20px;
+      border: 1px solid #444;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #242424, #111);
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      transition: 0.25s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-4px);
+      border-color: #fff;
+      background: #303030;
+      box-shadow: 0 8px 25px rgba(255,255,255,0.08);
+    }
+
+    .livepix {
+      border-color: #21c779;
+      color: #35e38b;
+    }
+
+    .livepix:hover {
+      background: #10251b;
+      border-color: #35e38b;
+    }
+
+    .instagram:hover {
+      border-color: #d65baf;
+    }
+
+    .discord:hover {
+      border-color: #7289da;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 25px 20px;
+      }
+
+      .container {
+        max-width: 100%;
+      }
+
+      .link {
+        min-height: 60px;
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        max-width: 480px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
-  <div class="logo">ONIKE<span>7</span></div>
-  <div class="subtitle">GAMING • FREE FIRE • LIVE</div>
 
-  <a class="link live" href="https://www.tiktok.com/@SEUUSUARIO" target="_blank">🔴 ASSISTA MINHAS LIVES</a>
-  <a class="link" href="https://www.tiktok.com/@SEUUSUARIO" target="_blank">🎵 TIKTOK</a>
-  <a class="link" href="https://www.youtube.com/" target="_blank">▶ YOUTUBE</a>
-  <a class="link" href="https://www.instagram.com/" target="_blank">📸 INSTAGRAM</a>
-  <a class="link" href="https://wa.me/55SEUNUMERO" target="_blank">💬 WHATSAPP</a>
+  <main class="container">
 
-  <div class="footer">© 2026 ONIKE7 • TODOS OS DIREITOS RESERVADOS</div>
-</div>
+    <h1 class="logo">ONIKE7</h1>
+
+    <p class="subtitle">GAMING • FREE FIRE • LIVE</p>
+
+    <div class="line"></div>
+
+    <p class="description">
+      Seja bem-vindo à tropa! Escolha seu destino:
+    </p>
+
+    <nav class="links" aria-label="Links oficiais">
+
+      <a
+        class="link livepix"
+        href="https://livepix.gg/onike7"
+        target="_blank"
+        rel="noopener noreferrer">
+        💚 LIVEPIX — APOIE MINHA LIVE
+      </a>
+
+      <a
+        class="link instagram"
+        href="https://www.instagram.com/onike7_/"
+        target="_blank"
+        rel="noopener noreferrer">
+        📸 INSTAGRAM
+      </a>
+
+      <a
+        class="link discord"
+        href="https://discord.gg/MCJFa7PqKW"
+        target="_blank"
+        rel="noopener noreferrer">
+        🎮 ENTRE NO MEU DISCORD
+      </a>
+
+    </nav>
+
+    <footer>
+      © 2026 ONIKE7 • TODOS OS DIREITOS RESERVADOS
+    </footer>
+
+  </main>
+
 </body>
 </html>
