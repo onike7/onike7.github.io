@@ -2,204 +2,188 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080808">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
 
-  <title>ONIKE7 | Links Oficiais</title>
+<title>NIKE7 | Links Oficiais</title>
 
-  <meta name="description" content="Acesse os links oficiais do ONIKE7: LivePix, Instagram, Discord e Fila Apostado.">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+body {
+    min-height: 100vh;
+    background: #050505;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 25px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* FOTO DE PERFIL */
+.perfil {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #087cff;
+    box-shadow: 0 0 25px #087cff90;
+    margin-bottom: 20px;
+}
+
+/* NOME */
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #087cff;
+}
+
+.subtitulo {
+    color: #999;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+/* BOTÕES */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    width: 100%;
+    padding: 17px;
+
+    background: linear-gradient(90deg, #101010, #151b28);
+    border: 1px solid #087cff;
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background: #087cff;
+    box-shadow: 0 0 25px #087cff;
+    transform: scale(1.04);
+}
+
+/* ÍCONES */
+.botao img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* RODAPÉ */
+.rodape {
+    color: #555;
+    font-size: 11px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+    .perfil {
+        width: 145px;
+        height: 145px;
     }
 
-    body {
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(ellipse at top, #252525 0%, #101010 40%, #050505 100%);
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 18px;
+    h1 {
+        font-size: 35px;
     }
-
-    .container {
-      width: 100%;
-      max-width: 460px;
-      text-align: center;
-    }
-
-    .logo {
-      font-size: clamp(48px, 12vw, 76px);
-      font-weight: 900;
-      letter-spacing: 5px;
-      font-style: italic;
-      text-shadow: 0 0 22px rgba(255,255,255,0.2);
-    }
-
-    .subtitle {
-      color: #aaa;
-      font-size: 12px;
-      letter-spacing: 5px;
-      margin-top: 8px;
-      margin-bottom: 35px;
-    }
-
-    .line {
-      width: 65px;
-      height: 3px;
-      background: #fff;
-      margin: 0 auto 30px;
-      border-radius: 5px;
-    }
-
-    .description {
-      color: #ccc;
-      font-size: 15px;
-      margin-bottom: 25px;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      min-height: 62px;
-      padding: 16px 20px;
-      border: 1px solid #444;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #242424, #111);
-      color: #fff;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      transition: 0.25s ease;
-    }
-
-    .link:hover {
-      transform: translateY(-4px);
-      border-color: #fff;
-      background: #303030;
-      box-shadow: 0 8px 25px rgba(255,255,255,0.08);
-    }
-
-    .livepix {
-      border-color: #21c779;
-      color: #35e38b;
-    }
-
-    .livepix:hover {
-      background: #10251b;
-      border-color: #35e38b;
-    }
-
-    .instagram:hover {
-      border-color: #d65baf;
-    }
-
-    .discord:hover {
-      border-color: #7289da;
-    }
-
-    .fila:hover {
-      border-color: #f0c14b;
-      color: #f0c14b;
-    }
-
-    footer {
-      margin-top: 45px;
-      color: #777;
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-
-    @media (max-width: 480px) {
-      body {
-        padding: 25px 20px;
-      }
-
-      .container {
-        max-width: 100%;
-      }
-
-      .link {
-        min-height: 60px;
-        font-size: 14px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        max-width: 480px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <main class="container">
+<div class="container">
 
-    <h1 class="logo">ONIKE7</h1>
+    <!-- FOTO DE PERFIL -->
+    <img
+        src="foto perfil(1).jpeg"
+        class="perfil"
+        alt="NIKE7"
+    >
 
-    <p class="subtitle">GAMING • FREE FIRE • LIVE</p>
+    <!-- NOME -->
+    <h1>NIKE7</h1>
 
-    <div class="line"></div>
+    <p class="subtitulo">LINKS OFICIAIS</p>
 
-    <p class="description">
-      Seja bem-vindo à tropa! Escolha seu destino:
+    <div class="links">
+
+        <!-- LIVE PIX -->
+        <a
+            href="https://livepix.gg/onike7"
+            class="botao"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img src="pix_sem_fundo.png" alt="PIX">
+            LIVE PIX
+        </a>
+
+        <!-- DISCORD -->
+        <a
+            href="https://discord.gg/MCJFa7PqKW"
+            class="botao"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img
+                src="discord-logo-discord-icon-transparent-free-png.webp"
+                alt="Discord"
+            >
+            DISCORD
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+            href="https://www.instagram.com/onike7_/"
+            class="botao"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img src="instagram_sem_fundo.png" alt="Instagram">
+            INSTAGRAM
+        </a>
+
+    </div>
+
+    <p class="rodape">
+        © 2026 NIKE7 • TODOS OS DIREITOS RESERVADOS
     </p>
 
-    <nav class="links" aria-label="Links oficiais">
-
-      <a class="link livepix"
-         href="https://livepix.gg/onike7"
-         target="_blank"
-         rel="noopener noreferrer">
-        💚 LIVEPIX — APOIE MINHA LIVE
-      </a>
-
-      <a class="link instagram"
-         href="https://www.instagram.com/onike7_/"
-         target="_blank"
-         rel="noopener noreferrer">
-        📸 INSTAGRAM
-      </a>
-
-      <a class="link discord"
-         href="https://discord.gg/uuZTpbNCHc"
-         target="_blank"
-         rel="noopener noreferrer">
-        🎮 ENTRE NO MEU DISCORD
-      </a>
-
-      <a class="link fila"
-         href="https://discord.gg/tr549wMkku"
-         target="_blank"
-         rel="noopener noreferrer">
-        🎯 FILA APOSTADO
-      </a>
-
-    </nav>
-
-    <footer>
-      © 2026 ONIKE7 • TODOS OS DIREITOS RESERVADOS
-    </footer>
-
-  </main>
+</div>
 
 </body>
 </html>
